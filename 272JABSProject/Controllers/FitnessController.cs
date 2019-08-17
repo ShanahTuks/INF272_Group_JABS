@@ -13,5 +13,11 @@ namespace _272JABSProject.Controllers
         {
             return View();
         }
+
+        public ActionResult LogInPage()
+        {
+            return View();
+        }
     }
+
 }
