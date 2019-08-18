@@ -8,33 +8,32 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>ActivityInput</title>
+    <title>FoodInput</title>
     <link href="~/Content/brendencss.css" rel="stylesheet" />
 </head>
 <body>
     <h1 style="text-align:center">Mindfull Body Fitness</h1>
-    <h2 style="text-align:center">Activity Input</h2>
+    <h2 style="text-align:center">Food Intake Input</h2>
 
     <div class="bcontainer">
         <p>
-            Activity Type: <select id="activitytype" name="activitytype" onchange="changeReason()">
+            Food Type: <select id="foodtype" onchange="changeReason()">
                 <option value="" selected disabled hidden>Select Type</option>
-                <option value="Endurance">Endurance</option>
-                <option value="Strength">Strength</option>
-                <option value="Balance">Balance</option>
-                <option value="Flexibility">Flexibility</option>
+                <option value="Protein">Protein</option>
+                <option value="Carbohydrates">Carbohydrates</option>
+                <option value="Fats">Fats</option>
+                <option value="Vitamins">Vitamins</option>
+                <option value="Water">Water</option>
             </select>
         </p>
 
-        <p>
-            Activity: <select id="activity" name="activity">
+        <p>Food Item: <select name="fooditem" id="fooditem">
                 <option value="" selected disabled hidden>Select Item</option>
-            </select>
-        </p>
+              </select></p>
 
-        <p>Recommended Time/Amount: <input type="text" name="recTAmount"></p>
+        <p>Recommended Amount: <input type="text" name="recAmount"></p>
 
-        <p>Actual Time/Amount: <input type="text" name="actTAmount"></p>
+        <p>Actual Amount: <input type="text" name="actAmount"></p>
 
         <p>
             <button onclick="location.href='@Url.Action("Index", "Fitness")';return false;">Save and Submit</button>
@@ -45,57 +44,54 @@
 
 
 
-
-
-
     <script>
         function changeReason()
         {
-            var selectedStatus = document.getElementById("activitytype");
-            var Reason = document.getElementById("activity");
-            var enduranceArray = new Array("Running", "Swimming", "Biking", "Stair Climbing");
-            var strengthArray = new Array("Lifting Weights", "Push-Ups", "Pull-Ups", "Leg-Squats");
-            var balanceArray = new Array("Stand on one foot", "Walk heel to toe", "Balance Board", "Shift Weight");
-            var flexibilityArray = new Array("Shoulder rolls", "Forward Lunges", "Seat Stretch", "Cross-Over");
+            var selectedStatus = document.getElementById("foodtype");
+            var Reason = document.getElementById("fooditem");
+            var proteinArray = new Array("Meat", "Chicken", "Egg", "Nuts");
+            var carbohydratesArray = new Array("Bread", "Milk", "Potato", "Rice");
+            var fatsArray = new Array("Avocado", "Cheese", "Olive oil", "Yogurt");
+            var vitaminsArray = new Array("Orange", "Carrot", "Broccoli", "Milk");
             removeOptions(Reason);
 
-            if (selectedStatus.value == "Endurance")
+            if (selectedStatus.value == "Protein")
             {
                 for (var i = 0; i < 4; i++)
                 {
                     var option = document.createElement("option");
-                    option.text = enduranceArray[i];
-                    option.value = enduranceArray[i];
+                    option.text = proteinArray[i];
+                    option.value = proteinArray[i];
                     Reason.add(option);
                 }
             }
-            else if (selectedStatus.value == "Strength")
+            else if (selectedStatus.value == "Carbohydrates")
             {
                 for (var i = 0; i < 4; i++)
                 {
                     var option = document.createElement("option");
-                    option.text = strengthArray[i];
-                    option.value = strengthArray[i];
+                    option.text = carbohydratesArray[i];
+                    option.value = carbohydratesArray[i];
                     Reason.add(option);
                 }
             }
-            else if (selectedStatus.value == "Balance")
+            else if (selectedStatus.value == "Fats")
             {
                 for (var i = 0; i < 4; i++)
                 {
                     var option = document.createElement("option");
-                    option.text = balanceArray[i];
-                    option.value = balanceArray[i];
+                    option.text = fatsArray[i];
+                    option.value = fatsArray[i];
                     Reason.add(option);
                 }
             }
-            else if (selectedStatus.value == "Flexibility")
+            else if (selectedStatus.value == "Vitamins")
             {
                 for (var i = 0; i < 4; i++)
                 {
                     var option = document.createElement("option");
-                    option.text = flexibilityArray[i];
-                    option.value = flexibilityArray[i];
+                    option.text = vitaminsArray[i];
+                    option.value = vitaminsArray[i];
                     Reason.add(option);
                 }
             }
@@ -108,6 +104,8 @@
                 selectbox.remove(x);
             }
         }
+
     </script>
+
 </body>
 </html>
