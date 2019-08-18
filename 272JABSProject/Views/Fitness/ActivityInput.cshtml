@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ActivityInput</title>
+    <link href="~/Content/brendencss.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 style="text-align:center">Mindfull Body Fitness</h1>
+    <h2 style="text-align:center">Food Intake Input</h2>
+
+    <div class="bcontainer">
+        <p>
+            Food Type: <select id="foodtype" onchange="changeReason()">
+                <option value="" selected disabled hidden>Select Type</option>
+                <option value="Protein">Protein</option>
+                <option value="Carbohydrates">Carbohydrates</option>
+                <option value="Fats">Fats</option>
+                <option value="Vitamins">Vitamins</option>
+                <option value="Water">Water</option>
+            </select>
+        </p>
+
+        <p>Food Item: <select name="fooditem" id="fooditem"></select></p>
+
+        <p>Recommended Amount: <input type="text" name="recAmount"></p>
+
+        <p>Actual Amount: <input type="text" name="actAmount"></p>
+
+
+
+    </div>
+
+
+
+    <script>
+        function changeReason()
+        {
+            var selectedStatus = document.getElementById("foodtype");
+            var Reason = document.getElementById("fooditem");
+            var proteinArray = new Array("Meat", "Chicken", "Egg", "Nuts");
+            var carbohydratesArray = new Array("Bread", "Milk", "Potato", "Rice");
+            var fatsArray = new Array("Avocado", "Cheese", "Olive oil", "Yogurt");
+            var vitaminsArray = new Array("Orange", "Carrot", "Broccoli", "Milk");
+            removeOptions(Reason);
+
+            if (selectedStatus.value == "Protein")
+            {
+                for (var i = 0; i < 4; i++)
+                {
+                    var option = document.createElement("option");
+                    option.text = proteinArray[i];
+                    option.value = proteinArray[i];
+                    Reason.add(option);
+                }
+            }
+            else if (selectedStatus.value == "Carbohydrates")
+            {
+                for (var i = 0; i < 4; i++)
+                {
+                    var option = document.createElement("option");
+                    option.text = carbohydratesArray[i];
+                    option.value = carbohydratesArray[i];
+                    Reason.add(option);
+                }
+            }
+            else if (selectedStatus.value == "Fats")
+            {
+                for (var i = 0; i < 4; i++)
+                {
+                    var option = document.createElement("option");
+                    option.text = fatsArray[i];
+                    option.value = fatsArray[i];
+                    Reason.add(option);
+                }
+            }
+            else if (selectedStatus.value == "Vitamins")
+            {
+                for (var i = 0; i < 4; i++)
+                {
+                    var option = document.createElement("option");
+                    option.text = vitaminsArray[i];
+                    option.value = vitaminsArray[i];
+                    Reason.add(option);
+                }
+            }
+        }
+
+        function removeOptions(selectbox)
+        {
+            for (var x = selectbox.options.length - 1; x >= 0; x--)
+            {
+                selectbox.remove(x);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
