@@ -14,6 +14,7 @@ namespace _272JABSProject.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         public ActionResult UserProfile()
         {
             return View();
@@ -26,5 +27,16 @@ namespace _272JABSProject.Controllers
             return View();
         }
 >>>>>>> Jackie'sBranch
+=======
+        public ActionResult ActivityInput()
+        {
+            return View();
+        }
+
+        public ActionResult FoodInput()
+        {
+            return View();
+        }
+>>>>>>> brendensbranch
     }
 }

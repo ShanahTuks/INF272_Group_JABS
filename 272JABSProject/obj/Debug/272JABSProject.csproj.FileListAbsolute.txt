@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojResolveAssemblyReference.cache
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
+=======
+>>>>>>> brendensbranch
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\ApplicationInsights.config
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\roslyn\csc.exe
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -80,3 +83,177 @@ E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.xml
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+<<<<<<< HEAD
+=======
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojResolveAssemblyReference.cache
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\ApplicationInsights.config
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\csc.exe
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\System.Collections.Immutable.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\System.Reflection.Metadata.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\vbc.exe
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\VBCSCompiler.exe
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\roslyn\VBCSCompiler.exe.config
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\272JABSProject.dll.config
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\272JABSProject.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\272JABSProject.pdb
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Antlr3.Runtime.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\EntityFramework.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\EntityFramework.SqlServer.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Agent.Intercept.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.DependencyCollector.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Web.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.WindowsServer.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.ApplicationInsights.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Core.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Cookies.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Facebook.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.OAuth.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Web.Infrastructure.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Newtonsoft.Json.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Owin.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Helpers.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Mvc.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Optimization.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Razor.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Deployment.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Razor.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\WebGrease.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.DependencyCollector.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Web.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.WindowsServer.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.ApplicationInsights.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Helpers.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Mvc.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Optimization.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.Razor.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Deployment.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Razor.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Antlr3.Runtime.pdb
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Newtonsoft.Json.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\EntityFramework.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\EntityFramework.SqlServer.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Core.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Facebook.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Cookies.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.OAuth.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojAssemblyReference.cache
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csproj.CoreCompileInputs.cache
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csproj.CopyComplete
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
+H:\University\Year 2\INF 272\Group Project\1\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\ApplicationInsights.config
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\csc.exe
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\System.Collections.Immutable.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\System.Reflection.Metadata.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\vbc.exe
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\VBCSCompiler.exe
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\roslyn\VBCSCompiler.exe.config
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\272JABSProject.dll.config
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\272JABSProject.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\272JABSProject.pdb
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Antlr3.Runtime.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\EntityFramework.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\EntityFramework.SqlServer.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Agent.Intercept.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.DependencyCollector.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Web.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.WindowsServer.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.ApplicationInsights.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Core.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Cookies.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Facebook.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.OAuth.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Web.Infrastructure.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Newtonsoft.Json.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Owin.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Helpers.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Mvc.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Optimization.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Razor.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Deployment.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Razor.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\WebGrease.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.DependencyCollector.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.Web.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AI.WindowsServer.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.ApplicationInsights.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Helpers.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Mvc.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Optimization.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.Razor.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Deployment.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\System.Web.WebPages.Razor.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Antlr3.Runtime.pdb
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Newtonsoft.Json.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\EntityFramework.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\EntityFramework.SqlServer.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Core.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Facebook.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Cookies.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.OAuth.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojAssemblyReference.cache
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csproj.CoreCompileInputs.cache
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csproj.CopyComplete
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
+H:\University\Year 2\INF 272\Group Project\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
+>>>>>>> brendensbranch
