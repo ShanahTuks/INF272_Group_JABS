@@ -7,13 +7,14 @@ h1{
     
 }
 .dvsn{
-   
+   text-align:center;
     border: 1px solid black;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-right: 200px;
     margin-left: 200px;
     background-color: lightblue;
+    padding:20px;
 }
 #wrap{
     width:800px;
@@ -59,4 +60,8 @@ h3{
 }
 .inputs{
     text-align:center;
+}
+.center-block {
+  margin: auto;
+  display: block;
 }
