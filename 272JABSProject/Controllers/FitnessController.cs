@@ -18,5 +18,13 @@ namespace _272JABSProject.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+
+        public ActionResult FoodAnalysis()
+        {
+            return View();
+        }
+>>>>>>> Jackie'sBranch
     }
 }

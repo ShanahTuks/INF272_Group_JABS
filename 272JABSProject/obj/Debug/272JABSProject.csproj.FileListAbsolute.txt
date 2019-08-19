@@ -1,3 +1,6 @@
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojResolveAssemblyReference.cache
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
+E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\ApplicationInsights.config
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\roslyn\csc.exe
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -77,6 +80,3 @@ E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Google.xml
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.csprojResolveAssemblyReference.cache
-E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.dll
-E:\Work\INF272_JABS\INF272_Group_JABS\272JABSProject\obj\Debug\272JABSProject.pdb
