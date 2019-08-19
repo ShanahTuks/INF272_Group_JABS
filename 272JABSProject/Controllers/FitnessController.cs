@@ -17,7 +17,7 @@ namespace _272JABSProject.Controllers
 
         public ActionResult ActivityAnalysis()
         {
-            retun View();
+            return View();
         }
     }
 }
