@@ -10,6 +10,7 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />
@@ -19,6 +20,9 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
 >>>>>>> brendensbranch
+=======
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+>>>>>>> ShanahsBranch
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

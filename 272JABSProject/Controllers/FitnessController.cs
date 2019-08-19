@@ -15,6 +15,7 @@ namespace _272JABSProject.Controllers
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public ActionResult UserProfile()
         {
             return View();
@@ -38,5 +39,12 @@ namespace _272JABSProject.Controllers
             return View();
         }
 >>>>>>> brendensbranch
+=======
+
+        public ActionResult ActivityAnalysis()
+        {
+            return View();
+        }
+>>>>>>> ShanahsBranch
     }
 }

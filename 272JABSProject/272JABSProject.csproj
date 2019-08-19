@@ -276,6 +276,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Fitness\Index.cshtml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Views\Fitness\UserProfile.cshtml" />
 <<<<<<< HEAD
 =======
@@ -285,6 +286,9 @@
     <Content Include="Views\Fitness\FoodInput.cshtml" />
     <Content Include="Views\Fitness\ActivityInput.cshtml" />
 >>>>>>> brendensbranch
+=======
+    <Content Include="Views\Fitness\ActivityAnalysis.cshtml" />
+>>>>>>> ShanahsBranch
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
