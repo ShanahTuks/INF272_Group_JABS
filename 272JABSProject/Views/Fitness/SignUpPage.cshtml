@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignUpPage</title>
+    <link href="~/Content/Amo'sStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <center>
+        <h1>Mindful Body Fitness</h1>
+        <h1>Sign Up</h1>
+       
+            <div id="wrap">
+                
+                    <div class="left">
+                       <br /> <h4>Personal Details</h4> <br />
+                        <label>Name     :</label> <input type="text" name="Name" class="inputs"> <br />
+                        <br />
+                        <label>Surname  :</label> <input type="text" name="Surname" class="inputs" /><br />
+                        <br />
+                        <label>Gender   :</label> <input type="text" name="Gender" class="inputs" /><br />
+                        <br />
+                        <label>Age      :</label> <input type="number" name="Age" class="inputs"/><br />
+                        <br />
+                        <label>Date of Birth   :</label> <input type="date" name="Age" class="inputs"/><br />
+                        <br />
+                        <label>Height     :</label> <input type="number" name="Height" class="inputs" /><label>meters</label><br />
+                        <br />
+                    </div>
+                    <div class="right">
+                        <h4>Deit and Medical Conditions</h4> <br />
+                        
+                        <label>Vegan: </label> <label>Yes</label><input type="checkbox" name="Yes" /> <label>No</label><input type="checkbox" name="No" /><br />
+                        <br />
+                        <label>Allergies</label> <select>
+                            Select Alergy
+                            <option value="None">None</option>
+                            <option value="Egg">Egg</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Peanut">Peanut</option>
+                            <option value="Tree Nut">Tree Nut</option>
+                             <option value="Corn">Corn</option>
+                        </select><br />
+                        <br />
+                        <h4>Account Details </h4><br />
+                        
+                        <label>Email Address:</label><input type="text" name="EmailAddress" class="bb" /> <br />
+                        <br />
+                        <label>Password:</label><input type="password" name="Password" class="bb" /> <br />   
+                        <br />                  
+                        <label>Confirm Password :</label><input type="password" name="Confirm Password" class="bb" /> <br /> 
+                        <br />
+                        <br />                    
+                        <input type="submit" value="Sign Up"> <input type="submit" value="Cancel">  <br />
+                    </div>               
+            </div>
+        
+        </center>
+</body>
+</html>
