@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{481EB705-9D99-4681-AEAE-21D20C8E61DA}</ProjectGuid>
+    <ProjectGuid>{5CEDECE7-0B0A-4657-9F87-B4AFDF2E223A}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -25,7 +25,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -213,10 +212,7 @@
     <Content Include="Content\Amo%27sStyleSheet.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-<<<<<<< HEAD
-=======
     <Content Include="Content\brendencss.css" />
->>>>>>> brendensbranch
     <Content Include="Content\Styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -275,26 +271,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Fitness\Index.cshtml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Content Include="Views\Fitness\UserProfile.cshtml" />
-<<<<<<< HEAD
-=======
-    <Content Include="Views\Fitness\FoodAnalysis.cshtml" />
->>>>>>> Jackie'sBranch
-=======
-    <Content Include="Views\Fitness\FoodInput.cshtml" />
-    <Content Include="Views\Fitness\ActivityInput.cshtml" />
->>>>>>> brendensbranch
-=======
     <Content Include="Views\Fitness\ActivityAnalysis.cshtml" />
->>>>>>> ShanahsBranch
-=======
+    <Content Include="Views\Fitness\ActivityInput.cshtml" />
+    <Content Include="Views\Fitness\FoodAnalysis.cshtml" />
+    <Content Include="Views\Fitness\FoodInput.cshtml" />
+    <Content Include="Views\Fitness\Index.cshtml" />
     <Content Include="Views\Fitness\LogInPage.cshtml" />
     <Content Include="Views\Fitness\SignUpPage.cshtml" />
->>>>>>> Amo'sBranch
+    <Content Include="Views\Fitness\UserProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -323,9 +307,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51921</DevelopmentServerPort>
+          <DevelopmentServerPort>58267</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51921/</IISUrl>
+          <IISUrl>http://localhost:58267/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

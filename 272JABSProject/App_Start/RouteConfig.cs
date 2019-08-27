@@ -16,7 +16,7 @@ namespace _272JABSProject
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Fitness", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Fitness", action = "LogInPage", id = UrlParameter.Optional }
             );
         }
     }

@@ -14,22 +14,22 @@ namespace _272JABSProject.Controllers
             return View();
         }
 
-//<<<<<<< HEAD
-//<<<<<<< HEAD
-//<<<<<<< HEAD
+        //<<<<<<< HEAD
+        //<<<<<<< HEAD
+        //<<<<<<< HEAD
         public ActionResult UserProfile()
         {
             return View();
         }
-//<<<<<<< HEAD
-//=======
+        //<<<<<<< HEAD
+        //=======
 
         public ActionResult FoodAnalysis()
         {
             return View();
         }
-//>>>>>>> Jackie'sBranch
-//=======
+        //>>>>>>> Jackie'sBranch
+        //=======
         public ActionResult ActivityInput()
         {
             return View();
@@ -39,15 +39,15 @@ namespace _272JABSProject.Controllers
         {
             return View();
         }
-//>>>>>>> brendensbranch
-//=======
+        //>>>>>>> brendensbranch
+        //=======
 
         public ActionResult ActivityAnalysis()
         {
             return View();
         }
-//>>>>>>> ShanahsBranch
-//=======
+        //>>>>>>> ShanahsBranch
+        //=======
         public ActionResult LogInPage()
         {
 
@@ -58,7 +58,6 @@ namespace _272JABSProject.Controllers
 
             return View();
         }
-//>>>>>>> Amo'sBranch
+        //>>>>>>> Amo'sBranch
     }
 }
-
