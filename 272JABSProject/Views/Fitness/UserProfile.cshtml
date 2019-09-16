@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserProfile</title>
+</head>
+<body>
+
+    <div style="align-content:center;align-items:center;align-self:center;text-align:center; resize:both;">
+        <h1 style="text-align:center">Mindful Body Fitness</h1>
+        <br /><br />
+        <h2 style="text-align:center">User Profile</h2>
+        <br /><br />
+        <img style="width:175px; height:189px; align-self:center;" />
+        <br />
+        <label style="text-align:center;">Name         </label><label style="text-align:center;">Surname          </label>
+        <br /><br />
+    </div>
+
+    <div style="background-image: linear-gradient(steelblue, #2196F3); width:50%; margin:auto;">
+        <label style="background-color:white;">About you:</label>
+        <br /><br />
+
+
+        <label>Nationality  </label><input type="text" style="margin-left:50px;" /> <label style="justify-content:center; margin-left:100px;">Date of Birth    </label><input type="text" style="justify-content:center; margin-left:20px;" />
+        <br /><br />
+        <label>Gender       </label><input type="text" style="margin-left:75px;"/> <label style="justify-content:center; margin-left:100px;">Country          </label><input type="text" style="justify-content:center; margin-left:50px;" />
+        <br /><br />
+        <label>Age          </label><input type="number" style="margin-left:95px;"/> <label style="justify-content:center; margin-left:100px">Allergies        </label><input type="text" style="justify-content:center; margin-left:45px;" />
+        <br /><br />
+        <label>Height       </label><input type="number" style="margin-left:77.5px;"/><label>cm</label> <input type="button" style="margin-left:77.5px;" value="Return to Home",, onclick="location.href='@Url.Action("Index","Fitness")'" />
+        <br /><br />
+    </div>
+</body>
+</html>

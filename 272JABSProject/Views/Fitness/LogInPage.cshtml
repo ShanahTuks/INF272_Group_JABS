@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LogInPage</title>
+    <link href="~/Content/Amo'sStyleSheet.css" rel="stylesheet" />
+</head>
+<body><h1>Mindful Body Fitness</h1>
+    <h1>Log In</h1>
+    <div class="dvsn"> 
+       
+        <center>
+            <label>Email Address:</label> <input type="text" name="EmailAddress" class="center-block" /> <br />
+
+            <label>Password      :</label>      <input type="password" name="Password" class="center-block" /> <br />
+
+            <input type="submit" value="Log In" onclick="location.href='@Url.Action("Index","Fitness")'"> <input type="submit" value="Create an Account" onclick="location.href='@Url.Action("SignUpPage","Fitness")'">  <br />
+            <br />
+        </center>
+       <br/>
+        
+    </div>
+</body>
+</html>
