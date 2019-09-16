@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ca3d366703c0468da0aba1b55dc813ac" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="FitnessModel.AmountEaten" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.CondtionType" Width="1.5" PointX="8" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.Conversation" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.ConversationReply" Width="1.5" PointX="7.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.Diet" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.Excercis" Width="1.5" PointX="6" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.ExcercisesDone" Width="1.5" PointX="8.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.ReccomendedDiet" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.ReccomendedExcercise" Width="1.5" PointX="8.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.User" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.UserCondition" Width="1.5" PointX="10.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessModel.UserType" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="FitnessModel.FK_AmountEaten_Diet" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_AmountEaten_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_UserConditions_CondtionType" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_Conversation_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_Conversation_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ConversationReply_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ConversationReply_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ReccomendedDiet_Diet" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ExcercisesDone_Excercises" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ReccomendedExcercise_Excercises" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ExcercisesDone_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ReccomendedDiet_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_ReccomendedExcercise_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_User_UserType" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessModel.FK_UserConditions_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
