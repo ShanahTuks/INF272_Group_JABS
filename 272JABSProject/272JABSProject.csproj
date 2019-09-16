@@ -80,6 +80,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -196,6 +198,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Database Controller\AmountEatensController.cs" />
+    <Compile Include="Controllers\Database Controller\CondtionTypesController.cs" />
+    <Compile Include="Controllers\Database Controller\ConversationRepliesController.cs" />
+    <Compile Include="Controllers\Database Controller\ConversationsController.cs" />
+    <Compile Include="Controllers\Database Controller\DietsController.cs" />
+    <Compile Include="Controllers\Database Controller\ExcercisController.cs" />
+    <Compile Include="Controllers\Database Controller\ExcercisesDonesController.cs" />
+    <Compile Include="Controllers\Database Controller\ReccomendedDietsController.cs" />
+    <Compile Include="Controllers\Database Controller\ReccomendedExcercisesController.cs" />
+    <Compile Include="Controllers\Database Controller\UserConditionsController.cs" />
+    <Compile Include="Controllers\Database Controller\UsersController.cs" />
+    <Compile Include="Controllers\Database Controller\UserTypesController.cs" />
     <Compile Include="Controllers\FitnessController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -203,8 +217,62 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AmountEaten.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CondtionType.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Conversation.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConversationReply.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Diet.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Excercis.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExcercisesDone.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FitnessModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FitnessModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FitnessModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ReccomendedDiet.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReccomendedExcercise.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserCondition.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserType.cs">
+      <DependentUpon>FitnessModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -218,12 +286,29 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\FitnessModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessModel.edmx</DependentUpon>
+      <LastGenOutput>FitnessModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\FitnessModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessModel.edmx</DependentUpon>
+      <LastGenOutput>FitnessModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\FitnessModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FitnessModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\FitnessModel.edmx.diagram">
+      <DependentUpon>FitnessModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -279,6 +364,66 @@
     <Content Include="Views\Fitness\LogInPage.cshtml" />
     <Content Include="Views\Fitness\SignUpPage.cshtml" />
     <Content Include="Views\Fitness\UserProfile.cshtml" />
+    <Content Include="Views\Database\Users\Create.cshtml" />
+    <Content Include="Views\Database\Users\Delete.cshtml" />
+    <Content Include="Views\Database\Users\Details.cshtml" />
+    <Content Include="Views\Database\Users\Edit.cshtml" />
+    <Content Include="Views\Database\Users\Index.cshtml" />
+    <Content Include="Views\Database\AmountEatens\Create.cshtml" />
+    <Content Include="Views\Database\AmountEatens\Delete.cshtml" />
+    <Content Include="Views\Database\AmountEatens\Details.cshtml" />
+    <Content Include="Views\Database\AmountEatens\Edit.cshtml" />
+    <Content Include="Views\Database\AmountEatens\Index.cshtml" />
+    <Content Include="Views\Database\CondtionTypes\Create.cshtml" />
+    <Content Include="Views\Database\CondtionTypes\Delete.cshtml" />
+    <Content Include="Views\Database\CondtionTypes\Details.cshtml" />
+    <Content Include="Views\Database\CondtionTypes\Edit.cshtml" />
+    <Content Include="Views\Database\CondtionTypes\Index.cshtml" />
+    <Content Include="Views\Database\Conversations\Create.cshtml" />
+    <Content Include="Views\Database\Conversations\Delete.cshtml" />
+    <Content Include="Views\Database\Conversations\Details.cshtml" />
+    <Content Include="Views\Database\Conversations\Edit.cshtml" />
+    <Content Include="Views\Database\Conversations\Index.cshtml" />
+    <Content Include="Views\Database\ConversationReplies\Create.cshtml" />
+    <Content Include="Views\Database\ConversationReplies\Delete.cshtml" />
+    <Content Include="Views\Database\ConversationReplies\Details.cshtml" />
+    <Content Include="Views\Database\ConversationReplies\Edit.cshtml" />
+    <Content Include="Views\Database\ConversationReplies\Index.cshtml" />
+    <Content Include="Views\Database\Diets\Create.cshtml" />
+    <Content Include="Views\Database\Diets\Delete.cshtml" />
+    <Content Include="Views\Database\Diets\Details.cshtml" />
+    <Content Include="Views\Database\Diets\Edit.cshtml" />
+    <Content Include="Views\Database\Diets\Index.cshtml" />
+    <Content Include="Views\Database\Excercis\Create.cshtml" />
+    <Content Include="Views\Database\Excercis\Delete.cshtml" />
+    <Content Include="Views\Database\Excercis\Details.cshtml" />
+    <Content Include="Views\Database\Excercis\Edit.cshtml" />
+    <Content Include="Views\Database\Excercis\Index.cshtml" />
+    <Content Include="Views\Database\ExcercisesDones\Create.cshtml" />
+    <Content Include="Views\Database\ExcercisesDones\Delete.cshtml" />
+    <Content Include="Views\Database\ExcercisesDones\Details.cshtml" />
+    <Content Include="Views\Database\ExcercisesDones\Edit.cshtml" />
+    <Content Include="Views\Database\ExcercisesDones\Index.cshtml" />
+    <Content Include="Views\Database\ReccomendedDiets\Create.cshtml" />
+    <Content Include="Views\Database\ReccomendedDiets\Delete.cshtml" />
+    <Content Include="Views\Database\ReccomendedDiets\Details.cshtml" />
+    <Content Include="Views\Database\ReccomendedDiets\Edit.cshtml" />
+    <Content Include="Views\Database\ReccomendedDiets\Index.cshtml" />
+    <Content Include="Views\Database\ReccomendedExcercises\Create.cshtml" />
+    <Content Include="Views\Database\ReccomendedExcercises\Delete.cshtml" />
+    <Content Include="Views\Database\ReccomendedExcercises\Details.cshtml" />
+    <Content Include="Views\Database\ReccomendedExcercises\Edit.cshtml" />
+    <Content Include="Views\Database\ReccomendedExcercises\Index.cshtml" />
+    <Content Include="Views\Database\UserConditions\Create.cshtml" />
+    <Content Include="Views\Database\UserConditions\Delete.cshtml" />
+    <Content Include="Views\Database\UserConditions\Details.cshtml" />
+    <Content Include="Views\Database\UserConditions\Edit.cshtml" />
+    <Content Include="Views\Database\UserConditions\Index.cshtml" />
+    <Content Include="Views\Database\UserTypes\Create.cshtml" />
+    <Content Include="Views\Database\UserTypes\Delete.cshtml" />
+    <Content Include="Views\Database\UserTypes\Details.cshtml" />
+    <Content Include="Views\Database\UserTypes\Edit.cshtml" />
+    <Content Include="Views\Database\UserTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -290,6 +435,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

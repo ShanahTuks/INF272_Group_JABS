@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FitnessModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AmountEaten">
+    <Key>
+      <PropertyRef Name="AmountID" />
+    </Key>
+    <Property Name="AmountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DietID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Diet" Relationship="Self.FK_AmountEaten_Diet" FromRole="AmountEaten" ToRole="Diet" />
+    <NavigationProperty Name="User" Relationship="Self.FK_AmountEaten_User" FromRole="AmountEaten" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CondtionType">
+    <Key>
+      <PropertyRef Name="ConditionTypeID" />
+    </Key>
+    <Property Name="ConditionTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CondtionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserConditions" Relationship="Self.FK_UserConditions_CondtionType" FromRole="CondtionType" ToRole="UserConditions" />
+  </EntityType>
+  <EntityType Name="Conversation">
+    <Key>
+      <PropertyRef Name="ConversationID" />
+    </Key>
+    <Property Name="ConversationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User1ID" Type="Int32" Nullable="false" />
+    <Property Name="User2ID" Type="Int32" Nullable="false" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Conversation_User" FromRole="Conversation" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="Self.FK_Conversation_User1" FromRole="Conversation" ToRole="User" />
+    <NavigationProperty Name="ConversationReplies" Relationship="Self.FK_ConversationReply_Conversation" FromRole="Conversation" ToRole="ConversationReply" />
+  </EntityType>
+  <EntityType Name="ConversationReply">
+    <Key>
+      <PropertyRef Name="CRID" />
+    </Key>
+    <Property Name="CRID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ConversationID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Conversation" Relationship="Self.FK_ConversationReply_Conversation" FromRole="ConversationReply" ToRole="Conversation" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ConversationReply_User" FromRole="ConversationReply" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Diet">
+    <Key>
+      <PropertyRef Name="DietID" />
+    </Key>
+    <Property Name="DietID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DietName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AmountEatens" Relationship="Self.FK_AmountEaten_Diet" FromRole="Diet" ToRole="AmountEaten" />
+    <NavigationProperty Name="ReccomendedDiets" Relationship="Self.FK_ReccomendedDiet_Diet" FromRole="Diet" ToRole="ReccomendedDiet" />
+  </EntityType>
+  <EntityType Name="Excercis">
+    <Key>
+      <PropertyRef Name="ExcerciseID" />
+    </Key>
+    <Property Name="ExcerciseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExcericiseName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ExcerciseDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ExcercisesDones" Relationship="Self.FK_ExcercisesDone_Excercises" FromRole="Excercises" ToRole="ExcercisesDone" />
+    <NavigationProperty Name="ReccomendedExcercises" Relationship="Self.FK_ReccomendedExcercise_Excercises" FromRole="Excercises" ToRole="ReccomendedExcercise" />
+  </EntityType>
+  <EntityType Name="ExcercisesDone">
+    <Key>
+      <PropertyRef Name="ExcerciseDoneID" />
+    </Key>
+    <Property Name="ExcerciseDoneID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExcerciseID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Measurement" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Excercis" Relationship="Self.FK_ExcercisesDone_Excercises" FromRole="ExcercisesDone" ToRole="Excercises" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ExcercisesDone_User" FromRole="ExcercisesDone" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ReccomendedDiet">
+    <Key>
+      <PropertyRef Name="ReccDietID" />
+    </Key>
+    <Property Name="ReccDietID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DietID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Diet" Relationship="Self.FK_ReccomendedDiet_Diet" FromRole="ReccomendedDiet" ToRole="Diet" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ReccomendedDiet_User" FromRole="ReccomendedDiet" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ReccomendedExcercise">
+    <Key>
+      <PropertyRef Name="ReccExcerciseID" />
+    </Key>
+    <Property Name="ReccExcerciseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExcerciseID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Excercis" Relationship="Self.FK_ReccomendedExcercise_Excercises" FromRole="ReccomendedExcercise" ToRole="Excercises" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ReccomendedExcercise_User" FromRole="ReccomendedExcercise" ToRole="User" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserTypeID" Type="Int32" Nullable="false" />
+    <Property Name="XCoordinate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="YCoordinate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CurrentWeight" Type="Int32" Nullable="false" />
+    <Property Name="GoalWeight" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AmountEatens" Relationship="Self.FK_AmountEaten_User" FromRole="User" ToRole="AmountEaten" />
+    <NavigationProperty Name="Conversations" Relationship="Self.FK_Conversation_User" FromRole="User" ToRole="Conversation" />
+    <NavigationProperty Name="Conversations1" Relationship="Self.FK_Conversation_User1" FromRole="User" ToRole="Conversation" />
+    <NavigationProperty Name="ConversationReplies" Relationship="Self.FK_ConversationReply_User" FromRole="User" ToRole="ConversationReply" />
+    <NavigationProperty Name="ExcercisesDones" Relationship="Self.FK_ExcercisesDone_User" FromRole="User" ToRole="ExcercisesDone" />
+    <NavigationProperty Name="ReccomendedDiets" Relationship="Self.FK_ReccomendedDiet_User" FromRole="User" ToRole="ReccomendedDiet" />
+    <NavigationProperty Name="ReccomendedExcercises" Relationship="Self.FK_ReccomendedExcercise_User" FromRole="User" ToRole="ReccomendedExcercise" />
+    <NavigationProperty Name="UserType" Relationship="Self.FK_User_UserType" FromRole="User" ToRole="UserType" />
+    <NavigationProperty Name="UserConditions" Relationship="Self.FK_UserConditions_User" FromRole="User" ToRole="UserConditions" />
+  </EntityType>
+  <EntityType Name="UserCondition">
+    <Key>
+      <PropertyRef Name="UserConditionID" />
+    </Key>
+    <Property Name="UserConditionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConditionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CondtionType" Relationship="Self.FK_UserConditions_CondtionType" FromRole="UserConditions" ToRole="CondtionType" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserConditions_User" FromRole="UserConditions" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="UserTypeID" />
+    </Key>
+    <Property Name="UserTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_User_UserType" FromRole="UserType" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_AmountEaten_Diet">
+    <End Role="Diet" Type="Self.Diet" Multiplicity="1" />
+    <End Role="AmountEaten" Type="Self.AmountEaten" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diet">
+        <PropertyRef Name="DietID" />
+      </Principal>
+      <Dependent Role="AmountEaten">
+        <PropertyRef Name="DietID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AmountEaten_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="AmountEaten" Type="Self.AmountEaten" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AmountEaten">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserConditions_CondtionType">
+    <End Role="CondtionType" Type="Self.CondtionType" Multiplicity="1" />
+    <End Role="UserConditions" Type="Self.UserCondition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondtionType">
+        <PropertyRef Name="ConditionTypeID" />
+      </Principal>
+      <Dependent Role="UserConditions">
+        <PropertyRef Name="ConditionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conversation_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Conversation">
+        <PropertyRef Name="User1ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conversation_User1">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Conversation" Type="Self.Conversation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Conversation">
+        <PropertyRef Name="User2ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConversationReply_Conversation">
+    <End Role="Conversation" Type="Self.Conversation" Multiplicity="1" />
+    <End Role="ConversationReply" Type="Self.ConversationReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conversation">
+        <PropertyRef Name="ConversationID" />
+      </Principal>
+      <Dependent Role="ConversationReply">
+        <PropertyRef Name="ConversationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConversationReply_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ConversationReply" Type="Self.ConversationReply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ConversationReply">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReccomendedDiet_Diet">
+    <End Role="Diet" Type="Self.Diet" Multiplicity="1" />
+    <End Role="ReccomendedDiet" Type="Self.ReccomendedDiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diet">
+        <PropertyRef Name="DietID" />
+      </Principal>
+      <Dependent Role="ReccomendedDiet">
+        <PropertyRef Name="DietID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExcercisesDone_Excercises">
+    <End Role="Excercises" Type="Self.Excercis" Multiplicity="1" />
+    <End Role="ExcercisesDone" Type="Self.ExcercisesDone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Excercises">
+        <PropertyRef Name="ExcerciseID" />
+      </Principal>
+      <Dependent Role="ExcercisesDone">
+        <PropertyRef Name="ExcerciseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReccomendedExcercise_Excercises">
+    <End Role="Excercises" Type="Self.Excercis" Multiplicity="1" />
+    <End Role="ReccomendedExcercise" Type="Self.ReccomendedExcercise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Excercises">
+        <PropertyRef Name="ExcerciseID" />
+      </Principal>
+      <Dependent Role="ReccomendedExcercise">
+        <PropertyRef Name="ExcerciseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExcercisesDone_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ExcercisesDone" Type="Self.ExcercisesDone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ExcercisesDone">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReccomendedDiet_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ReccomendedDiet" Type="Self.ReccomendedDiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ReccomendedDiet">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReccomendedExcercise_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ReccomendedExcercise" Type="Self.ReccomendedExcercise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ReccomendedExcercise">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserType">
+    <End Role="UserType" Type="Self.UserType" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="UserTypeID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserConditions_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserConditions" Type="Self.UserCondition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserConditions">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FitnessEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AmountEatens" EntityType="Self.AmountEaten" />
+    <EntitySet Name="CondtionTypes" EntityType="Self.CondtionType" />
+    <EntitySet Name="Conversations" EntityType="Self.Conversation" />
+    <EntitySet Name="ConversationReplies" EntityType="Self.ConversationReply" />
+    <EntitySet Name="Diets" EntityType="Self.Diet" />
+    <EntitySet Name="Excercises" EntityType="Self.Excercis" />
+    <EntitySet Name="ExcercisesDones" EntityType="Self.ExcercisesDone" />
+    <EntitySet Name="ReccomendedDiets" EntityType="Self.ReccomendedDiet" />
+    <EntitySet Name="ReccomendedExcercises" EntityType="Self.ReccomendedExcercise" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserConditions" EntityType="Self.UserCondition" />
+    <EntitySet Name="UserTypes" EntityType="Self.UserType" />
+    <AssociationSet Name="FK_AmountEaten_Diet" Association="Self.FK_AmountEaten_Diet">
+      <End Role="Diet" EntitySet="Diets" />
+      <End Role="AmountEaten" EntitySet="AmountEatens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AmountEaten_User" Association="Self.FK_AmountEaten_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AmountEaten" EntitySet="AmountEatens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserConditions_CondtionType" Association="Self.FK_UserConditions_CondtionType">
+      <End Role="CondtionType" EntitySet="CondtionTypes" />
+      <End Role="UserConditions" EntitySet="UserConditions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conversation_User" Association="Self.FK_Conversation_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Conversation" EntitySet="Conversations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conversation_User1" Association="Self.FK_Conversation_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Conversation" EntitySet="Conversations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConversationReply_Conversation" Association="Self.FK_ConversationReply_Conversation">
+      <End Role="Conversation" EntitySet="Conversations" />
+      <End Role="ConversationReply" EntitySet="ConversationReplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConversationReply_User" Association="Self.FK_ConversationReply_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ConversationReply" EntitySet="ConversationReplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReccomendedDiet_Diet" Association="Self.FK_ReccomendedDiet_Diet">
+      <End Role="Diet" EntitySet="Diets" />
+      <End Role="ReccomendedDiet" EntitySet="ReccomendedDiets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExcercisesDone_Excercises" Association="Self.FK_ExcercisesDone_Excercises">
+      <End Role="Excercises" EntitySet="Excercises" />
+      <End Role="ExcercisesDone" EntitySet="ExcercisesDones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReccomendedExcercise_Excercises" Association="Self.FK_ReccomendedExcercise_Excercises">
+      <End Role="Excercises" EntitySet="Excercises" />
+      <End Role="ReccomendedExcercise" EntitySet="ReccomendedExcercises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExcercisesDone_User" Association="Self.FK_ExcercisesDone_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ExcercisesDone" EntitySet="ExcercisesDones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReccomendedDiet_User" Association="Self.FK_ReccomendedDiet_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ReccomendedDiet" EntitySet="ReccomendedDiets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReccomendedExcercise_User" Association="Self.FK_ReccomendedExcercise_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ReccomendedExcercise" EntitySet="ReccomendedExcercises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserType" Association="Self.FK_User_UserType">
+      <End Role="UserType" EntitySet="UserTypes" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserConditions_User" Association="Self.FK_UserConditions_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserConditions" EntitySet="UserConditions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

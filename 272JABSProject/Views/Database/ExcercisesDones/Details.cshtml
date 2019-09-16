@@ -1,0 +1,42 @@
+﻿@model _272JABSProject.Models.ExcercisesDone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExcercisesDone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Measurement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Measurement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Excercis.ExcericiseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Excercis.ExcericiseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExcerciseDoneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
