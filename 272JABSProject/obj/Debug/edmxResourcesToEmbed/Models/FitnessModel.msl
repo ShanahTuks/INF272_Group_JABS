@@ -4,137 +4,138 @@
     <EntitySetMapping Name="AmountEatens">
       <EntityTypeMapping TypeName="FitnessModel.AmountEaten">
         <MappingFragment StoreEntitySet="AmountEaten">
-          <ScalarProperty Name="AmountID" ColumnName="AmountID" />
-          <ScalarProperty Name="DietID" ColumnName="DietID" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DietID" ColumnName="DietID" />
+          <ScalarProperty Name="AmountID" ColumnName="AmountID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CondtionTypes">
       <EntityTypeMapping TypeName="FitnessModel.CondtionType">
         <MappingFragment StoreEntitySet="CondtionType">
-          <ScalarProperty Name="ConditionTypeID" ColumnName="ConditionTypeID" />
-          <ScalarProperty Name="CondtionName" ColumnName="CondtionName" />
           <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CondtionName" ColumnName="CondtionName" />
+          <ScalarProperty Name="ConditionTypeID" ColumnName="ConditionTypeID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Conversations">
       <EntityTypeMapping TypeName="FitnessModel.Conversation">
         <MappingFragment StoreEntitySet="Conversation">
-          <ScalarProperty Name="ConversationID" ColumnName="ConversationID" />
-          <ScalarProperty Name="User1ID" ColumnName="User1ID" />
-          <ScalarProperty Name="User2ID" ColumnName="User2ID" />
-          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="User2ID" ColumnName="User2ID" />
+          <ScalarProperty Name="User1ID" ColumnName="User1ID" />
+          <ScalarProperty Name="ConversationID" ColumnName="ConversationID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ConversationReplies">
       <EntityTypeMapping TypeName="FitnessModel.ConversationReply">
         <MappingFragment StoreEntitySet="ConversationReply">
-          <ScalarProperty Name="CRID" ColumnName="CRID" />
-          <ScalarProperty Name="Message" ColumnName="Message" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="ConversationID" ColumnName="ConversationID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CRID" ColumnName="CRID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Diets">
       <EntityTypeMapping TypeName="FitnessModel.Diet">
         <MappingFragment StoreEntitySet="Diet">
-          <ScalarProperty Name="DietID" ColumnName="DietID" />
-          <ScalarProperty Name="DietName" ColumnName="DietName" />
           <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DietName" ColumnName="DietName" />
+          <ScalarProperty Name="DietID" ColumnName="DietID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Excercises">
       <EntityTypeMapping TypeName="FitnessModel.Excercis">
         <MappingFragment StoreEntitySet="Excercises">
-          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
-          <ScalarProperty Name="ExcericiseName" ColumnName="ExcericiseName" />
           <ScalarProperty Name="ExcerciseDescription" ColumnName="ExcerciseDescription" />
+          <ScalarProperty Name="ExcericiseName" ColumnName="ExcericiseName" />
+          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ExcercisesDones">
       <EntityTypeMapping TypeName="FitnessModel.ExcercisesDone">
         <MappingFragment StoreEntitySet="ExcercisesDone">
-          <ScalarProperty Name="ExcerciseDoneID" ColumnName="ExcerciseDoneID" />
-          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Measurement" ColumnName="Measurement" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
+          <ScalarProperty Name="ExcerciseDoneID" ColumnName="ExcerciseDoneID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ReccomendedDiets">
       <EntityTypeMapping TypeName="FitnessModel.ReccomendedDiet">
         <MappingFragment StoreEntitySet="ReccomendedDiet">
-          <ScalarProperty Name="ReccDietID" ColumnName="ReccDietID" />
-          <ScalarProperty Name="DietID" ColumnName="DietID" />
-          <ScalarProperty Name="Amount" ColumnName="Amount" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="DietID" ColumnName="DietID" />
+          <ScalarProperty Name="ReccDietID" ColumnName="ReccDietID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ReccomendedExcercises">
       <EntityTypeMapping TypeName="FitnessModel.ReccomendedExcercise">
         <MappingFragment StoreEntitySet="ReccomendedExcercise">
-          <ScalarProperty Name="ReccExcerciseID" ColumnName="ReccExcerciseID" />
-          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ExcerciseID" ColumnName="ExcerciseID" />
+          <ScalarProperty Name="ReccExcerciseID" ColumnName="ReccExcerciseID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
       <EntityTypeMapping TypeName="FitnessModel.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="version" ColumnName="version" />
           <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="FitnessModel.User">
         <MappingFragment StoreEntitySet="User">
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="UserSurname" ColumnName="UserSurname" />
-          <ScalarProperty Name="Gender" ColumnName="Gender" />
-          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
-          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
-          <ScalarProperty Name="XCoordinate" ColumnName="XCoordinate" />
-          <ScalarProperty Name="YCoordinate" ColumnName="YCoordinate" />
-          <ScalarProperty Name="CurrentWeight" ColumnName="CurrentWeight" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
           <ScalarProperty Name="GoalWeight" ColumnName="GoalWeight" />
+          <ScalarProperty Name="CurrentWeight" ColumnName="CurrentWeight" />
+          <ScalarProperty Name="YCoordinate" ColumnName="YCoordinate" />
+          <ScalarProperty Name="XCoordinate" ColumnName="XCoordinate" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="UserSurname" ColumnName="UserSurname" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserConditions">
       <EntityTypeMapping TypeName="FitnessModel.UserCondition">
         <MappingFragment StoreEntitySet="UserConditions">
-          <ScalarProperty Name="UserConditionID" ColumnName="UserConditionID" />
-          <ScalarProperty Name="ConditionTypeID" ColumnName="ConditionTypeID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ConditionTypeID" ColumnName="ConditionTypeID" />
+          <ScalarProperty Name="UserConditionID" ColumnName="UserConditionID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserTypes">
       <EntityTypeMapping TypeName="FitnessModel.UserType">
         <MappingFragment StoreEntitySet="UserType">
-          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
-          <ScalarProperty Name="UserTypeName" ColumnName="UserTypeName" />
           <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserTypeName" ColumnName="UserTypeName" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

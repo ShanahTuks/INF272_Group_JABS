@@ -40,6 +40,7 @@ namespace _272JABSProject.Models
         public string YCoordinate { get; set; }
         public int CurrentWeight { get; set; }
         public int GoalWeight { get; set; }
+        public double Height { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AmountEaten> AmountEatens { get; set; }

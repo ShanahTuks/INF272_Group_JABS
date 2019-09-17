@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using _272JABSProject.Models;
 
 namespace _272JABSProject.Controllers
 {
     public class FitnessController : Controller
     {
+
+        private FitnessEntities db = new FitnessEntities();
+
         // GET: Fitness
         public ActionResult Index()
         {
@@ -55,7 +59,7 @@ namespace _272JABSProject.Controllers
         }
         public ActionResult SignUpPage()
         {
-
+            ViewBag.UserTypeID = new SelectList(db.UserTypes, "UserTypeID", "UserTypeName");
             return View();
         }
         //>>>>>>> Amo'sBranch

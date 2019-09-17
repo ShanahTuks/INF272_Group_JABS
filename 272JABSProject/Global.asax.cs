@@ -16,20 +16,20 @@ namespace _272JABSProject
         {
             ViewLocationFormats = new[]
             {
-            "~/RazorViews/{1}/{0}.cshtml", "~/RazorViews/{1}/{0}.vbhtml",
-            "~/RazorViews/Common/{0}.cshtml", "~/RazorViews/Common/{0}.vbhtml"
+            "~/Views/{1}/{0}.cshtml", "~/Views/{1}/{0}.vbhtml",
+            "~/Views/Common/{0}.cshtml", "~/Views/Common/{0}.vbhtml"
         };
 
             MasterLocationFormats = new[]
             {
-            "~/RazorViews/{1}/{0}.cshtml", "~/RazorViews/{1}/{0}.vbhtml",
-            "~/RazorViews/Common/{0}.cshtml", "~/RazorViews/Common/{0}.vbhtml"
+            "~/Views/{1}/{0}.cshtml", "~/Views/{1}/{0}.vbhtml",
+            "~/Views/Common/{0}.cshtml", "~/Views/Common/{0}.vbhtml"
         };
 
             PartialViewLocationFormats = new[]
             {
-            "~/RazorViews/{1}/{0}.cshtml", "~/RazorViews/{1}/{0}.vbhtml",
-            "~/RazorViews/Common/{0}.cshtml", "~/RazorViews/Common/{0}.vbhtml"
+            "~/Views/{1}/{0}.cshtml", "~/Views/{1}/{0}.vbhtml",
+            "~/Views/Common/{0}.cshtml", "~/Views/Common/{0}.vbhtml"
         };
         }
     }
@@ -42,6 +42,10 @@ namespace _272JABSProject
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            ViewEngines.Engines.Clear();
+            var viewEngine = new CustomViewLocationRazorViewEngine();
+            ViewEngines.Engines.Add(viewEngine);
         }
     }
 }

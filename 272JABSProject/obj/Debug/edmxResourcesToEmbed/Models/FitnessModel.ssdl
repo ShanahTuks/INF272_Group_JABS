@@ -107,6 +107,7 @@
     <Property Name="YCoordinate" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="CurrentWeight" Type="int" Nullable="false" />
     <Property Name="GoalWeight" Type="int" Nullable="false" />
+    <Property Name="Height" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="UserConditions">
     <Key>
